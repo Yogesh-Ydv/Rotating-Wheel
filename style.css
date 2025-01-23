@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+}
+div{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 60px solid aqua;
+    border-top: 60px solid mediumseagreen;
+    border-left: 60px solid navy;
+    border-right: 60px solid maroon;
+    /* animation-name: yogesh; */
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+}
+div:hover{
+    animation-name: yogesh;
+    animation-timing-function: ease-out;
+}
+div:not(:hover){
+    animation-name: yadav;
+    animation-timing-function: ease-out;
+}
+@keyframes yogesh{
+    0%{transform:rotate(0deg);}
+    50%{border-top-color: red;}
+    50%{border-left-color: yellow;}
+    50%{border-bottom-color:magenta}
+    50%{border-right-color:green}
+    100%{transform: rotate(360deg);}
+}
+@keyframes yadav{
+    0%{transform:rotate(360deg);}
+    50%{border-top-color: red;}
+    50%{border-left-color: yellow;}
+    50%{border-bottom-color:magenta}
+    50%{border-right-color:green}
+    100%{transform: rotate(0deg);}
+}
